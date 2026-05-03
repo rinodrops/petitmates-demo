@@ -77,6 +77,9 @@ $(CONTENTS)/Info.plist: | $(CONTENTS)
 		-c "Add :NSHumanReadableCopyright string Copyright 2026 Rino, eMotionGraphics Inc." \
 		"$@"
 
+$(BUILD_DIR):
+	mkdir -p $@
+
 $(MACOS_DIR):
 	mkdir -p $@
 
