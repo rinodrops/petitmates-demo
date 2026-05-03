@@ -1,0 +1,10 @@
+canonical_width = 512
+
+[sprites."f-hang-corner"]
+attachment = "point"
+x = 145
+y = 199
+
+[sprites."f-hang-wall"]
+attachment = "line_x"
+x = 118
