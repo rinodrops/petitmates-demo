@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Install mingw-w64
         run: sudo apt-get update && sudo apt-get install -y mingw-w64
@@ -21,7 +21,7 @@ jobs:
           targets: x86_64-pc-windows-gnu
 
       - name: Cache Cargo registry
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         with:
           path: |
             ~/.cargo/registry
@@ -33,7 +33,7 @@ jobs:
         run: make windows-exe
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: PetitMatesDemo-windows
           path: build/PetitMatesDemo-v*-windows-x86_64.zip
