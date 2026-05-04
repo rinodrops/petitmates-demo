@@ -54,3 +54,62 @@ Download the latest release for your platform from the Releases page.
 ## License
 
 MIT © 2026 Rino, eMotionGraphics Inc.
+
+---
+
+# Petit Mates Demo (Japanese)
+
+ウィンドウの縁にキャラクターを置くデスクトップアクセサリーです。
+フトアゴヒゲトカゲがウィンドウ枠にしがみついて画面に常駐します。
+
+**ウィンドウの上端に現れます**
+| macOS                                                        | Windows                                                         |
+| ------------------------------------------------------------ | --------------------------------------------------------------- |
+| ![macOS screenshot](docs/screenshots/hang-corner-darwin.png) | ![Windows screenshot](docs/screenshots/hang-corner-windows.png) |
+
+**スペースが狭いときは側面に**
+| macOS                                                      | Windows                                                       |
+| ---------------------------------------------------------- | ------------------------------------------------------------- |
+| ![macOS screenshot](docs/screenshots/hang-wall-darwin.png) | ![Windows screenshot](docs/screenshots/hang-wall-windows.png) |
+
+## できること
+
+- フトアゴヒゲトカゲがウィンドウの上端または側面に表示されます
+- ウィンドウを移動・リサイズしても追従します
+- キャラクターにカーソルを重ねると半透明になり、コンテンツの邪魔になりません
+- システムトレイ / メニューバーに常駐します。Dock やタスクバーには表示されません
+
+## 対応OS
+- macOS 13+（Apple Silicon / Intel）
+- Windows 11（x86-64）†Arm64 PC での x86-64 エミュレーション環境でも動作確認済み
+
+## インストール
+
+[Releases](../../releases) ページから、お使いの OS 用の最新版をダウンロードしてください。
+
+![Application Icon](docs/screenshots/appicon.png)
+
+### macOS
+
+1. `PetitMatesDemo-vX.X.X-darwin-universal.zip` をダウンロード
+2. 解凍して `PetitMatesDemo.app` を `/Applications` に移動
+3. アプリを起動するとメニューバーにアイコンが表示されます
+4. 終了するにはメニューバーアイコンをクリックして **Exit** を選択
+
+> **注意:** 初回起動時に Gatekeeper の警告が表示される場合があります。
+> **システム設定 → プライバシーとセキュリティ** から **このまま開く** をクリックしてください。
+
+### Windows 11
+
+1. `PetitMatesDemo-vX.X.X-windows-x86_64.zip` をダウンロード
+2. 解凍して `PetitMatesDemo.exe` と `assets` フォルダを任意の場所に移動
+3. アプリを起動するとタスクバーの通知領域にアイコンが表示されます
+4. 終了するにはトレイアイコンを右クリックして **Exit** を選択
+
+![Extracted Files](docs/screenshots/extracted-windows.png)
+
+> **注意:** `assets` フォルダは実行ファイルと同じ場所に置く必要があります。
+
+## ライセンス
+
+MIT © 2026 Rino, eMotionGraphics Inc.
